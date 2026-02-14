@@ -1,0 +1,129 @@
+body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #A4193D, #FFDfB9);
+    background-repeat: repeat-x;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    padding: 5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ebc5cf;
+    margin-bottom: 2rem;
+}
+
+/* Quiz container styling */
+#quiz-container {
+    background-color: rgba(255, 255, 255, 0.9); /* subtle white overlay */
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Question text */
+#quiz-container h2 {
+    color: #A4193D;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Option buttons */
+#quiz-container #options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem; /* closer together */
+}
+
+#quiz-container .option-btn {
+    background-color: #A4193D;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Hover and active effects to make them pop */
+#quiz-container .option-btn:hover {
+    background-color: #FFDfB9;
+    color: #A4193D;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #FFDfB9;
+}
+
+#quiz-container .option-btn:active {
+    transform: scale(0.98);
+}
+
+/* Next button styling */
+#quiz-container #next-btn {
+    background-color: #FFDfB9;
+    color: #A4193D;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+#quiz-container #next-btn:hover {
+    background-color: #A4193D;
+    color: #FFDfB9;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #A4193D;
+}
+
+#quiz-container #next-btn:active {
+    transform: scale(0.98);
+}
+
+#quiz-container #restart-btn {
+    background-color: #A4193D;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+#quiz-container #restart-btn:hover {
+    background-color: #FFDfB9;
+    color: #A4193D;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #FFDfB9;
+}
+
+#quiz-container #restart-btn:active {
+    transform: scale(0.98);
+}
+
+
+
+/* Feedback text */
+#quiz-container #feedback {
+    margin: 1rem 0;
+    font-weight: 600
+}
